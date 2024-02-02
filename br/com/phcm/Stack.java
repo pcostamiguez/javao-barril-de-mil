@@ -38,7 +38,7 @@ public class Stack {
             peek++;
             arr[peek] = e;
         }else{
-            throw new ArrayIndexOutOfBoundsException("Array is full.");
+            throw new RuntimeException("Array is full.");
         }
     }
 
@@ -48,7 +48,7 @@ public class Stack {
             peek--;
             return e;
         }else{
-            throw new IllegalArgumentException("Array is empty.");
+            throw new RuntimeException("Array is empty.");
         }
     }
 
